@@ -22,7 +22,7 @@
     </div>
     <form action="">
         <input type="search" name="" id="" placeholder="Welke auto wilt u huren?">
-        <img src="assets/images/icons/search-normal.svg" alt="" class="search-icon">
+        <img src="/assets/images/icons/search-normal.svg" alt="" class="search-icon">
     </form>
     <nav>
         <ul>
