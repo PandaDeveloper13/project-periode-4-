@@ -28,8 +28,8 @@
         <ul>
             <li><a href="/pages/home.php">Home</a></li>
             <li><a href="/pages/ons-aanbod.php">Ons aanbod</a></li>
-            <li><a href="/over-ons">Over ons</a></li>
-            <li><a href="#">Hulp nodig?</a></li>
+            <li><a href="/pages/over-ons.php">Over ons</a></li>
+            <li><a href="/pages/hulp-nodig.php">Hulp nodig?</a></li>
         </ul>
     </nav>
     <div class="menu">
