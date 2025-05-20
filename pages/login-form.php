@@ -1,4 +1,7 @@
-<?php require "includes/header.php" ?>
+<?php 
+$root_path = $_SERVER['DOCUMENT_ROOT'];
+require $root_path . "/includes/header.php"; 
+?>
 <main>
     <form action="/login-handler" class="account-form" method="post">
         <h2>Log in</h2>
@@ -13,4 +16,4 @@
     </form>
 </main>
 
-<?php require "includes/footer.php" ?>
+<?php require $root_path . "/includes/footer.php"; ?>
