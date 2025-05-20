@@ -1,25 +1,26 @@
 <?php 
-require "includes/header.php";
+$root_path = $_SERVER['DOCUMENT_ROOT'];
+require $root_path . "/includes/header.php";
 
-// Initialiseer de likes array in de sessie als deze niet bestaat
+
 if (isset($_SESSION['id']) && !isset($_SESSION['likes'])) {
     $_SESSION['likes'] = [];
 }
 
-// Afhandelen van like/unlike actie
+
 if (isset($_SESSION['id']) && isset($_GET['like'])) {
     $car_id = $_GET['like'];
     
-    // Toggle like status
+    
     if (in_array($car_id, $_SESSION['likes'])) {
-        // Unlike the car
+        
         $_SESSION['likes'] = array_diff($_SESSION['likes'], [$car_id]);
     } else {
-        // Like the car
+        
         $_SESSION['likes'][] = $car_id;
     }
     
-    // Redirect terug naar dezelfde pagina zonder like parameter
+    
     $redirect_url = 'ons-aanbod.php';
     if (isset($_GET['category'])) {
         $redirect_url .= '?category=' . urlencode($_GET['category']);
@@ -29,7 +30,7 @@ if (isset($_SESSION['id']) && isset($_GET['like'])) {
     exit;
 }
 
-// Verwerk categorie parameter
+
 $selectedCategories = [];
 if (isset($_GET['category']) && $_GET['category'] !== '') {
     $selectedCategories = explode(',', $_GET['category']);
@@ -146,7 +147,7 @@ if (isset($_GET['category']) && $_GET['category'] !== '') {
             ]
         ];
 
-        // Apply category filter if set
+        
         if (!empty($selectedCategories)) {
             $filtered_cars = array_filter($cars, function($car) use ($selectedCategories) {
                 return in_array($car['type'], $selectedCategories);
@@ -196,5 +197,4 @@ if (isset($_GET['category']) && $_GET['category'] !== '') {
 </div>
 </main>
 
-<?php require "includes/footer.php"; ?>
-
+<?php require $root_path . "/includes/footer.php"; ?>
