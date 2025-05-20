@@ -1,4 +1,3 @@
-
 <footer>
     <div class="brand">
         <h2>Rydr.</h2>
@@ -8,18 +7,18 @@
         <div class="links">
             <h3>Over ons</h3>
             <ul>
-                <li><a href="/over-ons">Het team</a></li>
-                <li><a href="#">Onze visie</a></li>
-                <li><a href="#">Vacatures</a></li>
+                <li><a href="/pages/het-team.php">Het team</a></li>
+                <li><a href="/pages/onze-visie.php">Onze visie</a></li>
+                <li><a href="/pages/vacatures.php">Vacatures</a></li>
             </ul>
         </div>
         <div class="links">
             <h3>Community</h3>
             <ul>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Invite a friend</a></li>
+                <li><a href="/pages/events.php">Events</a></li>
+                <li><a href="/pages/blog.php">Blog</a></li>
+                <li><a href="/pages/podcast.php">Podcast</a></li>
+                <li><a href="/pages/invite.php">Invite a friend</a></li>
             </ul>
         </div>
         <div class="links">
@@ -41,8 +40,8 @@
     </div>
     <div class="legal-links">
         <ul>
-            <li><a href="#">Privacy & Policy</a></li>
-            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="/pages/privacy.php">Privacy & Policy</a></li>
+            <li><a href="/pages/terms.php">Terms & Condition</a></li>
         </ul>
     </div>
 </div>
