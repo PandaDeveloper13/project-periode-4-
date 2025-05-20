@@ -1,4 +1,4 @@
-<?php require "includes/header.php" ?>
+<?php require "../includes/header.php" ?>
 
 <?php
 //TODO: Implementeer dat de pagina de juiste auto laat zien op basis van de query paramater 'name'
