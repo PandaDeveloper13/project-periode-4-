@@ -72,9 +72,9 @@
         <div class="events-cta">
             <h2>Organiseer je eigen event?</h2>
             <p>Wil je een event organiseren met Rydr? Neem contact met ons op voor de mogelijkheden.</p>
-            <a href="/contact" class="button-primary">Contact opnemen</a>
+            <a href="/pages/hulp-nodig.php" class="button-primary">Contact opnemen</a>
         </div>
     </div>
 </main>
 
-<?php require "../includes/footer.php"; ?> 
+<?php require "../includes/footer.php"; ?>
