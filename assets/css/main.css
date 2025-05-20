@@ -1076,3 +1076,1443 @@ footer .footer-links .links ul a {
     height: 50px;
     object-fit: contain;
 }
+
+/* Team Page Styles */
+.team-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.team-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 1.5rem 1.5rem 0.5rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.team-member .title {
+    color: #3563e9;
+    font-weight: 600;
+    margin: 0 1.5rem 1rem;
+}
+
+.team-member .bio {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 1.5rem 1.5rem;
+}
+
+.team-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.team-cta h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.team-cta p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Vacatures Page Styles */
+.vacatures-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.vacatures-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.vacatures-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.vacatures-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vacatures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.vacature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.vacature-card:hover {
+    transform: translateY(-5px);
+}
+
+.vacature-header {
+    margin-bottom: 1.5rem;
+}
+
+.vacature-header h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.vacature-type {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.vacature-details {
+    margin-bottom: 1.5rem;
+}
+
+.vacature-location {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.vacature-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.vacature-requirements {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.vacature-requirements li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.vacature-requirements li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3563e9;
+}
+
+.vacatures-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.vacatures-cta h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.vacatures-cta p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Visie Page Styles */
+.visie-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.visie-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.visie-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.visie-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.visie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.visie-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.visie-card:hover {
+    transform: translateY(-5px);
+}
+
+.visie-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.visie-card h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.visie-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.visie-mission {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.visie-mission h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.visie-mission p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.visie-values {
+    margin-bottom: 4rem;
+}
+
+.visie-values h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value-item {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h4 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.value-item p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container, 
+    .blog-page,
+    .events-page,
+    .podcast-page,
+    .invite-page,
+    .team-page,
+    .vacatures-page,
+    .visie-page {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .topbar {
+        padding: 1rem;
+    }
+
+    .topbar form {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    .topbar form input[type=search] {
+        width: 100%;
+    }
+
+    .advertorials {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .advertorial {
+        margin-bottom: 1rem;
+    }
+
+    .advertorial h2,
+    .advertorial p {
+        max-width: 100%;
+    }
+
+    .advertorial img {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .legal-footer {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .legal-footer .legal-links ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid .row {
+        width: 100%;
+    }
+
+    .car-detail .grid {
+        gap: 2rem;
+    }
+
+    .car-detail .call-to-action {
+        padding-top: 2rem;
+    }
+
+    .car-detail .call-to-action .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cars {
+        grid-template-columns: 1fr;
+    }
+
+    .filter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .filter select {
+        width: 100%;
+    }
+
+    .search-input {
+        flex-direction: column;
+    }
+
+    .search-input input[type="search"] {
+        width: 100%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .featured-episode {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .referral-link {
+        flex-direction: column;
+    }
+
+    .social-share {
+        flex-direction: column;
+    }
+
+    .share-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-date {
+        margin-bottom: 1rem;
+    }
+
+    .podcast-platforms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platform-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .topbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .topbar .logo {
+        justify-content: center;
+    }
+
+    .topbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .topbar .menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog-header h1,
+    .events-header h1,
+    .podcast-header h1,
+    .invite-header h1,
+    .team-header h1,
+    .vacatures-header h1,
+    .visie-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-intro,
+    .events-intro,
+    .podcast-intro,
+    .invite-intro,
+    .team-intro,
+    .vacatures-intro,
+    .visie-intro {
+        font-size: 1rem;
+    }
+
+    .benefits-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .episode-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .episode-actions .button-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Fix for mobile menu */
+@media (max-width: 768px) {
+    .topbar nav {
+        display: none;
+    }
+
+    .topbar nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .topbar nav.active ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topbar nav.active ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Fix for account dropdown on mobile */
+@media (max-width: 576px) {
+    .topbar .menu .account .account-dropdown {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Fix for images in cards */
+@media (max-width: 768px) {
+    .blog-image,
+    .episode-image,
+    .team-member img {
+        height: 200px;
+    }
+}
+
+/* Fix for grid layouts */
+@media (max-width: 768px) {
+    .blog-grid,
+    .events-grid,
+    .episodes-grid,
+    .team-grid,
+    .vacatures-grid,
+    .visie-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fix for forms and inputs */
+@media (max-width: 576px) {
+    .account-form,
+    .search-form,
+    .newsletter-form {
+        padding: 1rem;
+    }
+
+    .account-form input,
+    .search-form input,
+    .newsletter-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Fix for buttons */
+@media (max-width: 576px) {
+    .button-primary,
+    .button-secondary {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Fix for modals */
+@media (max-width: 576px) {
+    .modal-content {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Fix for footer */
+@media (max-width: 576px) {
+    .legal-footer .legal-links ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Blog Page Styles */
+.blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.blog-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-category {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.blog-card h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.blog-excerpt {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    color: #3563e9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.blog-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Events Page Styles */
+.events-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.events-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.events-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.events-section {
+    margin-bottom: 4rem;
+}
+
+.events-section h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1.5rem;
+}
+
+.event-date {
+    text-align: center;
+    min-width: 80px;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3563e9;
+    display: block;
+}
+
+.event-date .month {
+    color: #666;
+    font-size: 1rem;
+}
+
+.event-content {
+    flex: 1;
+}
+
+.event-content h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.event-location {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.event-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-card.past {
+    opacity: 0.8;
+}
+
+/* Podcast Page Styles */
+.podcast-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.podcast-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.podcast-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.podcast-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.podcast-featured {
+    margin-bottom: 4rem;
+}
+
+.featured-episode {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+}
+
+.featured-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 2rem;
+    flex: 1;
+}
+
+.episode-number {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.episode-description {
+    color: #666;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.episode-meta {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.episode-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podcast-platforms {
+    display: flex;
+    gap: 1rem;
+}
+
+.platform-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.episode-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.episode-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.episode-content {
+    padding: 1.5rem;
+}
+
+/* Invite Page Styles */
+.invite-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.invite-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.invite-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.invite-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.referral-program {
+    margin-bottom: 4rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.referral-form {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.referral-link {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.referral-link input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.share-options {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.share-button {
+    padding: 0.75rem 1.5rem;
+    background: #f0f0f0;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.share-button:hover {
+    background: #e1e1e1;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3563e9;
+    margin: 1rem 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container, 
+    .blog-page,
+    .events-page,
+    .podcast-page,
+    .invite-page,
+    .team-page,
+    .vacatures-page,
+    .visie-page {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .topbar {
+        padding: 1rem;
+    }
+
+    .topbar form {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    .topbar form input[type=search] {
+        width: 100%;
+    }
+
+    .advertorials {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .advertorial {
+        margin-bottom: 1rem;
+    }
+
+    .advertorial h2,
+    .advertorial p {
+        max-width: 100%;
+    }
+
+    .advertorial img {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .legal-footer {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .legal-footer .legal-links ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid .row {
+        width: 100%;
+    }
+
+    .car-detail .grid {
+        gap: 2rem;
+    }
+
+    .car-detail .call-to-action {
+        padding-top: 2rem;
+    }
+
+    .car-detail .call-to-action .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cars {
+        grid-template-columns: 1fr;
+    }
+
+    .filter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .filter select {
+        width: 100%;
+    }
+
+    .search-input {
+        flex-direction: column;
+    }
+
+    .search-input input[type="search"] {
+        width: 100%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .featured-episode {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .referral-link {
+        flex-direction: column;
+    }
+
+    .social-share {
+        flex-direction: column;
+    }
+
+    .share-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-date {
+        margin-bottom: 1rem;
+    }
+
+    .podcast-platforms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platform-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .topbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .topbar .logo {
+        justify-content: center;
+    }
+
+    .topbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .topbar .menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog-header h1,
+    .events-header h1,
+    .podcast-header h1,
+    .invite-header h1,
+    .team-header h1,
+    .vacatures-header h1,
+    .visie-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-intro,
+    .events-intro,
+    .podcast-intro,
+    .invite-intro,
+    .team-intro,
+    .vacatures-intro,
+    .visie-intro {
+        font-size: 1rem;
+    }
+
+    .benefits-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .episode-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .episode-actions .button-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Fix for mobile menu */
+@media (max-width: 768px) {
+    .topbar nav {
+        display: none;
+    }
+
+    .topbar nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .topbar nav.active ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topbar nav.active ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Fix for account dropdown on mobile */
+@media (max-width: 576px) {
+    .topbar .menu .account .account-dropdown {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Fix for images in cards */
+@media (max-width: 768px) {
+    .blog-image,
+    .episode-image,
+    .team-member img {
+        height: 200px;
+    }
+}
+
+/* Fix for grid layouts */
+@media (max-width: 768px) {
+    .blog-grid,
+    .events-grid,
+    .episodes-grid,
+    .team-grid,
+    .vacatures-grid,
+    .visie-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fix for forms and inputs */
+@media (max-width: 576px) {
+    .account-form,
+    .search-form,
+    .newsletter-form {
+        padding: 1rem;
+    }
+
+    .account-form input,
+    .search-form input,
+    .newsletter-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Fix for buttons */
+@media (max-width: 576px) {
+    .button-primary,
+    .button-secondary {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Fix for modals */
+@media (max-width: 576px) {
+    .modal-content {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Fix for footer */
+@media (max-width: 576px) {
+    .legal-footer .legal-links ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
