@@ -1,7 +1,10 @@
-<?php require "includes/header.php"; ?>
+<?php 
+$root_path = $_SERVER['DOCUMENT_ROOT'];
+require $root_path . "/includes/header.php"; 
+?>
 <main class="over-ons-page">
     <section class="hero-section">
-        <img src="/assets/images/banner.webp" alt="Rydr banner afbeelding" class="banner-image">
+        <img src="/assets/images/banner.jpeg" alt="Rydr banner afbeelding" class="banner-image">
         <div class="hero-overlay">
             <h1>Over Rydr.</h1>
             <p>Jouw betrouwbare partner voor autoverhuur in Nederland</p>
@@ -17,7 +20,7 @@
                     <p>Ons hoofdkantoor bevindt zich in het bruisende hart van Rotterdam, direct naast het Centraal Station. Hier combineren we technologie, design en klantgerichtheid onder één dak. In een modern pand met uitzicht op de skyline werken we elke dag aan de mobiliteit van morgen.</p>
                 </div>
                 <div class="col">
-                    <img src="/assets/images/hoofdvestiging.webp" alt="Rydr hoofdvestiging in Rotterdam" class="office-image">
+                    <img src="/assets/images/hoofdvestiging.png" alt="Rydr hoofdvestiging in Rotterdam" class="office-image">
                 </div>
             </div>
         </div>
@@ -47,38 +50,38 @@
         </div>
     </section>
 
-    <section class="our-team">
+    <section class="our-team" id="team">
         <div class="container">
             <h2>Ons team</h2>
             <p class="team-intro">Maak kennis met de mensen achter Rydr die elke dag klaarstaan om jou de beste service te bieden.</p>
             
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="/assets/images/team/jasper-van-den-brink.webp" alt="Jasper van den Brink">
+                    <img src="/assets/images/team/jasper-van-den-brink.png" alt="Jasper van den Brink">
                     <h3>Jasper van den Brink</h3>
                     <p class="title">CEO & Oprichter</p>
                     <p class="bio">Jasper heeft meer dan 15 jaar ervaring in de mobiliteitsbranche en is de drijvende kracht achter de innovatieve aanpak van Rydr.</p>
                 </div>
                 
                 <div class="team-member">
-                    <img src="/assets/images/team/lotte-de-graaf.webp" alt="Lotte de Graaf">
+                    <img src="/assets/images/team/lotte-de-graaf.png" alt="Lotte de Graaf">
                     <h3>Lotte de Graaf</h3>
                     <p class="title">Hoofd Klantenservice</p>
                     <p class="bio">Lotte zorgt ervoor dat onze klanten altijd de beste service krijgen en leidt ons klantenserviceteam met passie en toewijding.</p>
                 </div>
-                
+
                 <div class="team-member">
-                    <img src="/assets/images/team/brian-mensah.webp" alt="Brian Mensah">
+                    <img src="/assets/images/team/brian-mensah.png" alt="Brian Mensah">
                     <h3>Brian Mensah</h3>
-                    <p class="title">Vlootmanager</p>
-                    <p class="bio">Brian is verantwoordelijk voor ons wagenpark en zorgt ervoor dat onze auto's altijd in topconditie verkeren.</p>
+                    <p class="title">Hoofd Verkoop</p>
+                    <p class="bio">Brian leidt ons verkoopteam en zorgt ervoor dat we altijd de juiste auto's voor onze klanten hebben.</p>
                 </div>
-                
+
                 <div class="team-member">
-                    <img src="/assets/images/team/youssef-amrani.webp" alt="Youssef Amrani">
+                    <img src="/assets/images/team/youssef-amrani.png" alt="Youssef Amrani">
                     <h3>Youssef Amrani</h3>
-                    <p class="title">Technologie & Innovatie</p>
-                    <p class="bio">Youssef leidt onze technologische ontwikkelingen en werkt aan innovatieve oplossingen om het huurproces te verbeteren.</p>
+                    <p class="title">Hoofd Operations</p>
+                    <p class="bio">Youssef zorgt ervoor dat al onze vestigingen soepel draaien en dat onze auto's altijd in perfecte staat zijn.</p>
                 </div>
             </div>
         </div>
@@ -116,9 +119,10 @@
         <div class="container">
             <h2>Vragen of opmerkingen?</h2>
             <p>We staan klaar om al je vragen te beantwoorden. Neem contact met ons op via het onderstaande formulier of bezoek een van onze vestigingen.</p>
-            <a href="#" class="button-primary">Neem contact op</a>
+            <a href="/pages/hulp-nodig.php" class="button-primary">Neem contact op</a>
         </div>
     </section>
 </main>
 
-<?php require "includes/footer.php"; ?>
+<?php require $root_path . "/includes/footer.php"; ?>
+
