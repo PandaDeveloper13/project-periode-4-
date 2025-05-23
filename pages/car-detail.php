@@ -1,7 +1,7 @@
 <?php
 global $conn;
-include "header.php";
-include "db.php";
+include "../includes/header.php";
+include "../database/db.php";
 
 // ✅ Get car ID from URL
 $id = $_GET['id'] ?? null;
@@ -89,4 +89,4 @@ $conn->close();
     <?php endif; ?>
 </div>
 
-<?php include "footer.php"; ?>
+<?php include"../includes/header.php";; ?>

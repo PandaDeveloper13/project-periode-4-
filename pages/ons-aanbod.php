@@ -1,8 +1,8 @@
 <?php
 global $conn;
 
-require "header.php";
-require "db.php";
+require include "../includes/header.php";;
+require include "../database/db.php";;
 
 // Like system
 if (isset($_SESSION['id']) && !isset($_SESSION['likes'])) {
@@ -96,4 +96,4 @@ $stmt->close();
     </div>
 </main>
 
-<?php require "footer.php"; ?>
+<?php require include "../includes/footer.php"; ?>

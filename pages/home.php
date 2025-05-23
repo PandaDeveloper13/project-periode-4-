@@ -1,7 +1,7 @@
 <?php global $conn;
-require "header.php"; ?>
+require include "../includes/header.php"; ?>
 <?php
-include "db.php"; // Or adjust the path
+include "../database/db.php";; // Or adjust the path
 
 $sql = "SELECT * FROM rental_database LIMIT 5"; // show 4 popular cars
 $result = $conn->query($sql);
@@ -64,4 +64,4 @@ $result = $conn->query($sql);
 
 <?php $conn->close(); ?>
 
-<?php require "./includes/footer.php"; ?>
+<?php require "../includes/footer.php"; ?>
