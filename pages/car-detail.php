@@ -1,52 +1,67 @@
 <?php require_once __DIR__ . "/../includes/header.php"; ?>
 
 <?php
-//TODO: Implementeer dat de pagina de juiste auto laat zien op basis van de query paramater 'name'
-//$name = $_GET['name'] ?? null;
+// Database configuratie
+include 'database/db.php';
 
-//if ($name) {
-//    echo "Toon details van auto met naam: " . htmlspecialchars($name);
-//} else {
-//    echo "Geen auto opgegeven.";
-//}
-
-
-
+$sql = "SELECT * FROM rental_database";
+$result = $conn->query($sql);
 ?>
-<main class="car-detail">
-    <div class="grid">
-        <div class="row">
-            <div class="advertorial">
-                <h2>Sport auto met het beste design en snelheid</h2>
-                <p>Veiligheid en comfort terwijl je rijd in een futiristische en elante auto </p>
-                <img src="assets/images/car-rent-header-image-1.png" alt="">
-                <img src="assets/images/header-circle-background.svg" alt="" class="background-header-element">
-            </div>
-        </div>
-        <div class="row white-background">
-            <h2>Nissan GT-R</h2>
-            <div class="rating">
-                <span class="stars stars-4"></span>
-                <span>440+ reviewers</span>
-            </div>
-            <p>NISMO is het toonbeeld geworden van Nissan's uitzonderlijke prestaties, geïnspireerd door het meest meedogenloze testterrein: het circuit.</p>
-            <div class="car-type">
-                <div class="grid">
-                    <div class="row"><span class="accent-color">Type Car</span><span>Sport</span></div>
-                    <div class="row"><span class="accent-color">Capacity</span><span>2 person</span></div>
-                </div>
-                <div class="grid">
-                    <div class="row"><span class="accent-color">Steering</span><span>Manual</span></div>
-                    <div class="row"><span class="accent-color">Gasoline</span><span>70L</span></div>
-                </div>
-                <div class="call-to-action">
-                    <div class="row"><span class="font-weight-bold">€80,00</span> / dag</div>
-                    <div class="row"><a href="" class="button-primary">Huur nu</a></div>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</main>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental Cars</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Car Rental Overview</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Auto</th>
+            <th>Type</th>
+            <th>Liter</th>
+            <th>Passagiers</th>
+            <th>Versnellingsbak</th>
+            <th>Prijs (€)</th>
+        </tr>
+
+        <?php if ($result->num_rows > 0): ?>
+            <?php while($row = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><?= $row["Id"] ?></td>
+                    <td><?= $row["Auto"] ?></td>
+                    <td><?= $row["Type"] ?></td>
+                    <td><?= $row["Liter"] ?></td>
+                    <td><?= $row["Passagiers"] ?></td>
+                    <td><?= $row["Versnellingsbak"] ?></td>
+                    <td><?= $row["€ Prijs"] ?></td>
+                </tr>
+            <?php endwhile; ?>
+        <?php else: ?>
+            <tr><td colspan="7">No cars found.</td></tr>
+        <?php endif; ?>
+
+    </table>
+</body>
+</html>
+
+<?php $conn->close(); ?>
+
 
 <?php require_once __DIR__ . "/../includes/footer.php"; ?>
