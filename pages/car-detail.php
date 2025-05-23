@@ -1,67 +1,92 @@
-<?php require_once __DIR__ . "/../includes/header.php"; ?>
-
 <?php
-// Database configuratie
-include 'database/db.php';
+global $conn;
+include "header.php";
+include "db.php";
 
-$sql = "SELECT * FROM rental_database";
-$result = $conn->query($sql);
+// ✅ Get car ID from URL
+$id = $_GET['id'] ?? null;
+$car = null;
+
+// ✅ Fetch car by ID (not name)
+if ($id !== null && is_numeric($id)) {
+    $stmt = $conn->prepare("SELECT * FROM rental_database WHERE Id = ?");
+    $stmt->bind_param("i", $id); // "i" = integer
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $car = $result->fetch_assoc();
+    }
+
+    $stmt->close();
+}
+$conn->close();
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Rental Cars</title>
-    <style>
-        table {
-            width: 90%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-        th, td {
-            border: 1px solid #aaa;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-    </style>
-</head>
-<body>
-    <h2 style="text-align:center;">Car Rental Overview</h2>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Auto</th>
-            <th>Type</th>
-            <th>Liter</th>
-            <th>Passagiers</th>
-            <th>Versnellingsbak</th>
-            <th>Prijs (€)</th>
-        </tr>
-
-        <?php if ($result->num_rows > 0): ?>
-            <?php while($row = $result->fetch_assoc()): ?>
-                <tr>
-                    <td><?= $row["Id"] ?></td>
-                    <td><?= $row["Auto"] ?></td>
-                    <td><?= $row["Type"] ?></td>
-                    <td><?= $row["Liter"] ?></td>
-                    <td><?= $row["Passagiers"] ?></td>
-                    <td><?= $row["Versnellingsbak"] ?></td>
-                    <td><?= $row["€ Prijs"] ?></td>
-                </tr>
-            <?php endwhile; ?>
-        <?php else: ?>
-            <tr><td colspan="7">No cars found.</td></tr>
-        <?php endif; ?>
-
-    </table>
-</body>
-</html>
-
-<?php $conn->close(); ?>
 
 
-<?php require_once __DIR__ . "/../includes/footer.php"; ?>
+
+<div class="grid">
+    <div class="row">
+        <div class="advertorial">
+            <h2>Sport auto met het beste design en snelheid</h2>
+            <p>Veiligheid en comfort terwijl je rijdt in een futuristische en elegante auto.</p>
+            <img src="../assets/images/products/Car_<?= $car['Id'] ?>.png" alt="<?= htmlspecialchars($car['Auto']) ?>">
+
+            <img src="../assets/images/header-circle-background.svg" alt="" class="background-header-element">
+        </div>
+    </div>
+
+    <?php if ($car): ?>
+        <div class="row white-background">
+            <h2><?= htmlspecialchars($car['Auto']) ?></h2>
+            <div class="rating">
+                <span class="stars stars-4"></span>
+                <span>440+ reviewers</span>
+            </div>
+            <p><?= htmlspecialchars($car['Auto']) ?> is een uitstekende keuze voor sportief rijden met comfort en prestaties.</p>
+
+            <div class="car-type">
+                <div class="grid">
+                    <div class="row">
+                        <span class="accent-color">Type Car</span>
+                        <span><?= htmlspecialchars($car['Type']) ?></span>
+                    </div>
+                    <div class="row">
+                        <span class="accent-color">Capacity</span>
+                        <span><?= htmlspecialchars($car['Passagiers']) ?> personen</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="row">
+                        <span class="accent-color">Steering</span>
+                        <span><?= htmlspecialchars($car['Versnellingsbak']) ?></span>
+                    </div>
+                    <div class="row">
+                        <span class="accent-color">Gasoline</span>
+                        <span><?= htmlspecialchars($car['Liter']) ?>L</span>
+                    </div>
+                </div>
+                <br>
+                <div class="call-to-action">
+                    <div class="row">
+                        <span class="font-weight-bold">
+                            €<?= number_format($car['Prijs'], 2, ',', '.') ?>
+                        </span> / dag
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a href="#" class="button-primary">Huur nu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php else: ?>
+        <div class="row white-background">
+            <h2>Auto niet gevonden</h2>
+            <p>De opgegeven auto bestaat niet in onze database. Ga terug en probeer opnieuw.</p>
+        </div>
+    <?php endif; ?>
+</div>
+
+<?php include "footer.php"; ?>
